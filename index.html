@@ -1,91 +1,301 @@
-<!-- Header / Navigation -->
-<header id="header">
-    <nav id="navbar">
-        ...
-    </nav>
+<!DOCTYPE html>
+<html lang="en" data-occasion="birthday">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jashn Studio — party decoration in Delhi</title>
+<meta name="description" content="Balloon arches, backdrops and full room styling for birthdays, anniversaries, farewells and baby showers across Delhi NCR.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="wordmark" href="#top">
+    <span class="wordmark__dot" aria-hidden="true"></span>
+    Jashn Studio
+  </a>
+  <nav class="topnav" aria-label="Main">
+    <a href="#packages">Packages</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#how">How it works</a>
+    <a class="topnav__cta" href="#book">Book a date</a>
+  </nav>
 </header>
 
-<!-- Hero Section -->
-<section id="home">
-    ...
-</section>
+<main id="main">
 
-<!-- About Us -->
-<section id="about">
-    ...
-</section>
+  <!-- ───────────────────────── hero ───────────────────────── -->
+  <section class="hero" id="top">
+    <svg class="bunting" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
+      <path class="bunting__string" d="M0 14 Q 300 58 600 30 T 1200 20"/>
+      <g class="bunting__flags"></g>
+    </svg>
 
-<!-- Services / Decoration Categories -->
-<section id="services">
-    ...
-</section>
+    <p class="hero__place">Najafgarh &amp; all of Delhi NCR</p>
+    <h1 class="hero__title">We show up with ladders,<br>balloons and twelve<br>metres of ribbon.</h1>
+    <p class="hero__lede" id="heroLede">
+      Room styling for the days you want photographed. Tell us the date, we handle
+      the setup, the cleanup, and the panic at 6pm.
+    </p>
 
-<!-- Birthday Decorations -->
-<section id="birthday">
-    ...
-</section>
+    <div class="picker">
+      <p class="picker__label" id="pickerLabel">What are we decorating for?</p>
+      <div class="chips" role="tablist" aria-labelledby="pickerLabel">
+        <button class="chip" role="tab" data-occasion="birthday"     aria-selected="true">Birthday</button>
+        <button class="chip" role="tab" data-occasion="anniversary"  aria-selected="false">Anniversary</button>
+        <button class="chip" role="tab" data-occasion="farewell"     aria-selected="false">Farewell</button>
+        <button class="chip" role="tab" data-occasion="baby-shower"  aria-selected="false">Baby shower</button>
+      </div>
+    </div>
 
-<!-- Anniversary Decorations -->
-<section id="anniversary">
-    ...
-</section>
+    <p class="hero__note" id="occasionNote">Cake table, balloon arch, name board. Set up in about three hours.</p>
+  </section>
 
-<!-- Farewell Decorations -->
-<section id="farewell">
-    ...
-</section>
+  <!-- ───────────────────────── packages ───────────────────────── -->
+  <section class="section" id="packages">
+    <div class="section__head">
+      <h2>Packages</h2>
+      <p>Prices cover material, travel inside NCR, setup and next-day takedown. Anything can be swapped.</p>
+    </div>
 
-<!-- Baby Shower -->
-<section id="baby-shower">
-    ...
-</section>
+    <div class="cards" id="packageList">
 
-<!-- Other / Custom Decorations -->
-<section id="custom-decoration">
-    ...
-</section>
+      <article class="card" data-occasion="birthday">
+        <h3>First birthday, full room</h3>
+        <p class="card__price">₹12,500</p>
+        <p>Balloon arch over the cake table, a fabric backdrop, highchair banner and a photo corner sized for a phone camera.</p>
+        <ul class="card__list">
+          <li>150 balloons, matte finish</li>
+          <li>Custom name cutout</li>
+          <li>3 hours setup</li>
+        </ul>
+      </article>
 
-<!-- Gallery -->
-<section id="gallery">
-    ...
-</section>
+      <article class="card" data-occasion="birthday">
+        <h3>Surprise at home</h3>
+        <p class="card__price">₹4,800</p>
+        <p>The one people book on a Tuesday. Door curtain, ceiling balloons, LED name lights and candles down the hallway.</p>
+        <ul class="card__list">
+          <li>Under 90 minutes</li>
+          <li>Quiet setup while they're out</li>
+          <li>Same-day slots till 9pm</li>
+        </ul>
+      </article>
 
-<!-- Packages / Pricing -->
-<section id="packages">
-    ...
-</section>
+      <article class="card" data-occasion="anniversary">
+        <h3>Twenty-five years</h3>
+        <p class="card__price">₹18,000</p>
+        <p>Marigold and rose ropes, a seated photo wall for the family portrait, and a printed timeline of the years along one wall.</p>
+        <ul class="card__list">
+          <li>Fresh flowers, morning cut</li>
+          <li>Photo timeline, up to 25 frames</li>
+          <li>Stage seating for two</li>
+        </ul>
+      </article>
 
-<!-- How It Works -->
-<section id="how-it-works">
-    ...
-</section>
+      <article class="card" data-occasion="anniversary">
+        <h3>Terrace dinner for two</h3>
+        <p class="card__price">₹6,900</p>
+        <p>Table, drapes, warm string lights and a heater in winter. We leave before you arrive and come back after midnight.</p>
+        <ul class="card__list">
+          <li>Weatherproofed for open terraces</li>
+          <li>Candles in glass, no open flame</li>
+          <li>Playlist speaker included</li>
+        </ul>
+      </article>
 
-<!-- Why Choose Us -->
-<section id="why-us">
-    ...
-</section>
+      <article class="card" data-occasion="farewell">
+        <h3>Office farewell</h3>
+        <p class="card__price">₹7,200</p>
+        <p>Desk takeover or conference room. A signature board that actually survives the commute home, and a backdrop that fits 30 people.</p>
+        <ul class="card__list">
+          <li>Setup before 9am</li>
+          <li>Signature board, 2×3 ft</li>
+          <li>Removed the same evening</li>
+        </ul>
+      </article>
 
-<!-- Customer Reviews -->
-<section id="reviews">
-    ...
-</section>
+      <article class="card" data-occasion="farewell">
+        <h3>College send-off</h3>
+        <p class="card__price">₹15,400</p>
+        <p>Hall-scale work: entrance arch, stage panel, and a photo booth with props that hold up to four hundred people using them.</p>
+        <ul class="card__list">
+          <li>Entrance arch up to 12 ft</li>
+          <li>Booth with attendant</li>
+          <li>Two-day hold on materials</li>
+        </ul>
+      </article>
 
-<!-- FAQ -->
-<section id="faq">
-    ...
-</section>
+      <article class="card" data-occasion="baby-shower">
+        <h3>Godh bharai, traditional</h3>
+        <p class="card__price">₹16,500</p>
+        <p>Low seating with bolsters, flower canopy overhead, and a ring of diyas. Built so the guest of honour never has to stand up.</p>
+        <ul class="card__list">
+          <li>Floor seating for the family</li>
+          <li>Fresh flower canopy</li>
+          <li>Thali and gift table styling</li>
+        </ul>
+      </article>
 
-<!-- Booking -->
-<section id="booking">
-    ...
-</section>
+      <article class="card" data-occasion="baby-shower">
+        <h3>Pastel shower, half day</h3>
+        <p class="card__price">₹9,300</p>
+        <p>Balloon cloud, dessert table run, and a small games corner. Colours chosen with you, not from a fixed set.</p>
+        <ul class="card__list">
+          <li>Dessert table styling</li>
+          <li>Guest sign-in board</li>
+          <li>Setup in 2 hours</li>
+        </ul>
+      </article>
 
-<!-- Contact -->
-<section id="contact">
-    ...
-</section>
+    </div>
+    <p class="cards__empty" id="packageEmpty" hidden>No package for that occasion yet. Tell us what you have in mind and we'll quote it.</p>
+  </section>
 
-<!-- Footer -->
-<footer id="footer">
-    ...
+  <!-- ───────────────────────── gallery ───────────────────────── -->
+  <section class="section section--tint" id="gallery">
+    <div class="section__head">
+      <h2>Recent setups</h2>
+      <p>Shot on the day, before the guests arrived. Filtered by whatever you picked above.</p>
+    </div>
+
+    <!--
+      Drop real photos into the matching folders and the tiles below will use them.
+      Missing files simply fall back to the paper texture — nothing breaks.
+      images/birthday/  images/anniversary/  images/farewell/  images/baby-shower/  images/gallery/
+    -->
+    <div class="grid" id="galleryGrid">
+      <figure class="tile" data-occasion="birthday">
+        <img src="images/birthday/arch-01.jpg" alt="Balloon arch over a cake table" loading="lazy" onerror="this.remove()">
+        <figcaption>Cake table arch, Dwarka</figcaption>
+      </figure>
+      <figure class="tile tile--tall" data-occasion="birthday">
+        <img src="images/birthday/home-02.jpg" alt="Hallway lit with candles for a surprise" loading="lazy" onerror="this.remove()">
+        <figcaption>Hallway surprise, Uttam Nagar</figcaption>
+      </figure>
+      <figure class="tile" data-occasion="anniversary">
+        <img src="images/anniversary/terrace-01.jpg" alt="Terrace table under string lights" loading="lazy" onerror="this.remove()">
+        <figcaption>Terrace dinner, Janakpuri</figcaption>
+      </figure>
+      <figure class="tile" data-occasion="anniversary">
+        <img src="images/anniversary/flowers-03.jpg" alt="Marigold ropes along a wall" loading="lazy" onerror="this.remove()">
+        <figcaption>Marigold wall, Najafgarh</figcaption>
+      </figure>
+      <figure class="tile tile--wide" data-occasion="farewell">
+        <img src="images/farewell/stage-01.jpg" alt="Stage backdrop for a college send-off" loading="lazy" onerror="this.remove()">
+        <figcaption>Send-off stage, 400 guests</figcaption>
+      </figure>
+      <figure class="tile" data-occasion="farewell">
+        <img src="images/farewell/desk-02.jpg" alt="Decorated office desk" loading="lazy" onerror="this.remove()">
+        <figcaption>Desk takeover, Gurugram</figcaption>
+      </figure>
+      <figure class="tile" data-occasion="baby-shower">
+        <img src="images/baby-shower/canopy-01.jpg" alt="Flower canopy over floor seating" loading="lazy" onerror="this.remove()">
+        <figcaption>Godh bharai canopy</figcaption>
+      </figure>
+      <figure class="tile tile--tall" data-occasion="baby-shower">
+        <img src="images/baby-shower/pastel-02.jpg" alt="Pastel balloon cloud above a dessert table" loading="lazy" onerror="this.remove()">
+        <figcaption>Balloon cloud, Rohini</figcaption>
+      </figure>
+      <figure class="tile" data-occasion="birthday">
+        <img src="images/gallery/misc-01.jpg" alt="Photo corner with props" loading="lazy" onerror="this.remove()">
+        <figcaption>Photo corner, third birthday</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── process ───────────────────────── -->
+  <section class="section" id="how">
+    <div class="section__head">
+      <h2>How a booking runs</h2>
+      <p>Four steps, in this order, every time.</p>
+    </div>
+    <ol class="steps">
+      <li>
+        <h3>You send the date and the room</h3>
+        <p>A photo of the space is enough. Ceiling height and where the plug points are decide half the design.</p>
+      </li>
+      <li>
+        <h3>We quote within a day</h3>
+        <p>One price, itemised. If it's over your budget we'll say what to cut rather than quietly use thinner material.</p>
+      </li>
+      <li>
+        <h3>Half now, half on the day</h3>
+        <p>The advance holds your slot and buys the flowers. Dates inside 48 hours need the full amount up front.</p>
+      </li>
+      <li>
+        <h3>We set up, then disappear</h3>
+        <p>Our team leaves half an hour before your first guest, and comes back the next morning to take everything down.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ───────────────────────── booking ───────────────────────── -->
+  <section class="section section--tint" id="book">
+    <div class="book">
+      <div class="book__intro">
+        <h2>Check a date</h2>
+        <p>Tell us the basics and we'll come back with a quote, usually the same evening.</p>
+        <dl class="contact">
+          <dt>Phone</dt><dd><a href="tel:+911100000000">+91 11 0000 0000</a></dd>
+          <dt>Email</dt><dd><a href="mailto:hello@jashnstudio.in">hello@jashnstudio.in</a></dd>
+          <dt>Studio</dt><dd>Najafgarh, New Delhi — open 10am to 8pm</dd>
+        </dl>
+      </div>
+
+      <form class="form" id="bookingForm" novalidate>
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+          <p class="error" data-error-for="name"></p>
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="10 digits" required>
+          <p class="error" data-error-for="phone"></p>
+        </div>
+
+        <div class="field">
+          <label for="occasion">Occasion</label>
+          <select id="occasion" name="occasion">
+            <option value="birthday">Birthday</option>
+            <option value="anniversary">Anniversary</option>
+            <option value="farewell">Farewell</option>
+            <option value="baby-shower">Baby shower</option>
+            <option value="other">Something else</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="date">Date of the event</label>
+          <input id="date" name="date" type="date" required>
+          <p class="error" data-error-for="date"></p>
+        </div>
+
+        <div class="field field--full">
+          <label for="details">The space, and anything you already have in mind</label>
+          <textarea id="details" name="details" rows="4" placeholder="Living room, about 12 ft ceiling. Pinks if possible."></textarea>
+        </div>
+
+        <button class="btn" type="submit">Send enquiry</button>
+        <p class="form__status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Jashn Studio — decoration and event styling, Najafgarh, New Delhi.</p>
+  <p>Setups across Delhi NCR. Same-day slots subject to material availability.</p>
 </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
